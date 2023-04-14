@@ -1,16 +1,20 @@
-import './App.css';
+import './Images/CoffeeLogo.jpg';
 import './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+    <div class="nav">
+      <a href="#home">Home</a>
+      <a href="#images">Images</a>
+      <a href="#aboutUs">About Us</a>
+      <a href="#contactUs">Contact Us</a>
+      <img src='CoffeeLogo.jpg'></img>
+
+    </div>
        <h1>Welcome to coffeeHub</h1>
        <p id="text">Yay!!! future Senior Developer!!!</p>
-       <button type="button" onclick='document.getElementById("text").innerHTML = {navBar/}'>Click Me!</button>
-       <button type="button"onclick="document.getElementById('text').innerHTML = Date()">
-Click me to display Date and Time.</button>
-<p id="text"></p>
+        
     </div>
   );
 }
