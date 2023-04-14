@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import './components/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar/>
+       <h1>Welcome to coffeeHub</h1>
+       <p id="text">Yay!!! future Senior Developer!!!</p>
+       <button type="button" onclick='document.getElementById("text").innerHTML = {navBar/}'>Click Me!</button>
+       <button type="button"onclick="document.getElementById('text').innerHTML = Date()">
+Click me to display Date and Time.</button>
+<p id="text"></p>
     </div>
   );
 }
